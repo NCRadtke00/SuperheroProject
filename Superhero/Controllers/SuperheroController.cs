@@ -27,6 +27,11 @@ namespace Superhero.Controllers
         public IActionResult Create()
         {
             return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Superheros superhero)
+        {
 
         }
 
