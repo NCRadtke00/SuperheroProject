@@ -14,6 +14,14 @@ namespace Superhero.Data
         {
         }
         public DbSet<Superheros> Superheroes { get; set; }
-  
+        //protected override void OnModelCreating(ModelBuilder builder)
+        //{
+        //    base.OnModelCreating(builder);
+        //    builder.Entity<Superheros>().
+        //        .HasData(
+        //        {
+        //    });
+        //}
+
     }
 }
