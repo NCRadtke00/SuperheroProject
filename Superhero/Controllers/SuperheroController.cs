@@ -16,7 +16,8 @@ namespace Superhero.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            List<Superhero> superheroes = context.Superheroes.ToList();
+            return View(superheroes);
         }
     }
 }
