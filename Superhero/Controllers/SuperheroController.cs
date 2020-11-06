@@ -63,7 +63,10 @@ namespace Superhero.Controllers
                 return View(superhero);
             }
         }
+        public IActionResult Delete(int id)
+        {
 
+        }
 
 
     }
