@@ -65,7 +65,8 @@ namespace Superhero.Controllers
         }
         public IActionResult Delete(int id)
         {
-
+            var superhero = context.Superheroes.Where(s => s.Id == id).SingleOrDefault();
+            return View(superhero);
         }
 
 
