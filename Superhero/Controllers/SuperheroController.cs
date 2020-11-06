@@ -8,6 +8,7 @@ namespace Superhero.Controllers
 {
     public class SuperheroController : Controller
     {
+        public ApplicationDbContext context;
         public IActionResult Index()
         {
             return View();
