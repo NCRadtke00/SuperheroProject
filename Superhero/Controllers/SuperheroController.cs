@@ -48,7 +48,12 @@ namespace Superhero.Controllers
             var superhero = context.Superheroes.Where(s => s.Id == id).SingleOrDefault();
             return View(superhero);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(Superhero superhero)
+        {
 
+        }
 
 
     }
