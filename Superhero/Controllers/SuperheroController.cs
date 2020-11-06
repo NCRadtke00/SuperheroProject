@@ -24,7 +24,8 @@ namespace Superhero.Controllers
             var superhero = context.Superheroes.Where(s => s.Id == id).SingleOrDefault();
             return View(superhero);
         }
-
+        public IActionResult Create()
+        { }
 
 
 
