@@ -50,10 +50,20 @@ namespace Superhero.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Superhero superhero)
+        public ActionResult Edit(Superheros superhero)
         {
-
+            try
+            {
+                context.Update(superhero);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View(superhero);
+            }
         }
+
 
 
     }
