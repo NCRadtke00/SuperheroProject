@@ -32,7 +32,16 @@ namespace Superhero.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Superheros superhero)
         {
-
+            try
+            {
+                context.Add(superhero);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View(superhero);
+            }
         }
 
 
