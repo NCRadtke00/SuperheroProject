@@ -72,6 +72,16 @@ namespace Superhero.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Delete(Superheros superhero)
         {
+            try
+            {
+                context.Remove(superhero);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View(superhero);
+            }
         }
 
     }
