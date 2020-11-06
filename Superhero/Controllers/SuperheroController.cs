@@ -25,7 +25,10 @@ namespace Superhero.Controllers
             return View(superhero);
         }
         public IActionResult Create()
-        { }
+        {
+            return View();
+
+        }
 
 
 
