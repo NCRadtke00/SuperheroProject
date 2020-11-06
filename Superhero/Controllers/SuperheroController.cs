@@ -19,5 +19,14 @@ namespace Superhero.Controllers
             List<Superheros> superheroes = context.Superheroes.ToList();
             return View(superheroes);
         }
+        public IActionResult Details(int id)
+        {
+            var superhero = context.Superheroes.Where(s => s.Id == id).SingleOrDefault();
+            return View(superhero);
+        }
+
+
+
+
     }
 }
