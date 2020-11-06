@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Superhero.Models
 {
-    public class Superhero
+    public class Superheros
     {
         [Key]
         public int Id { get; set; }

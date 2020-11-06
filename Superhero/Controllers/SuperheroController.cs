@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Superhero.Data;
-
+using Superhero.Models;
 namespace Superhero.Controllers
 {
     public class SuperheroController : Controller
