@@ -43,6 +43,10 @@ namespace Superhero.Controllers
                 return View(superhero);
             }
         }
+        public IActionResult Edit(int id)
+        {
+
+        }
 
 
 
