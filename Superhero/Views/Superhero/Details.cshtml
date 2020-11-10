@@ -9,35 +9,35 @@
 </h1>
 
 <div>
-    <h4>Superheros information</h4>
+    <h4>Hero's information</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+            Name
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Alterego)
+            Alterego
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Alterego)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.PrimaryAbility)
+            Primary Ability
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.PrimaryAbility)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.SecondaryAbility)
+            Secondary Ability
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.SecondaryAbility)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Catchphrase)
+            Catch phrase 
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Catchphrase)
@@ -45,13 +45,13 @@
     </dl>
 </div>
 <div>
-    <form asp-action="Edit" asp-route-id="@Model.Id">
-        <button type="submit" class="btn btn-success">Edit</button>
-    </form> |
-    <form asp-action="Delete" asp-route-id="@Model.Id">
-        <button type="submit" class="btn btn-success">Delete</button>
-    </form> |
+    <a class="text-primary" asp-action="Edit" asp-route-id="@Model.Id">
+        Edit
+    </a> |
+    <a class="text-danger" asp-action="Delete" asp-route-id="@Model.Id">
+        Delete
+    </a> 
     <form asp-action="Index">
-        <button type="submit" class="btn btn-success">Back to List</button>
+        <button type="submit" class="btn btn-primary">Back to List</button>
     </form>
 </div>
